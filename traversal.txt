@@ -1,0 +1,60 @@
+Breadth-First Search (BFS) and Depth-First Search (DFS) for Binary Trees are ways to traverse nodes of the Binary Tree.
+
+A Tree is typically traversed in two ways:
+Breadth First Traversal (Or Level Order Traversal)
+Depth First Traversals
+Inorder Traversal (Left-Root-Right)
+Preorder Traversal (Root-Left-Right)
+Postorder Traversal (Left-Right-Root)
+BFS vs DFS for Binary Tree
+
+*What is Breadth First Search?
+Breadth First Search (BFS) is a graph traversal algorithm that starts traversing the graph from the root node and explores all the neighboring
+nodes at the present depth prior to moving on to the nodes at the next depth level.
+
+How does BFS Tree Traversal work?
+Breadth First Search (BFS) traversal explores all the neighboring nodes at the present depth prior to moving on to the nodes at the next depth
+level. In the context of a tree, BFS traversal works similarly.
+
+Here’s how BFS tree traversal typically works:
+
+1. Start at the root node and add it to a queue.
+2. While the queue is not empty, dequeue a node and visit it.
+3. Enqueue all of its children (if any) into the queue.
+4. Repeat steps 2 and 3 until the queue is empty.
+This approach ensures that nodes are visited level by level, moving horizontally across the tree before moving to the next level. This way,
+BFS explores the nodes in a breadth-first manner, making it useful for tasks like finding the shortest path in unweighted graphs or trees.
+
+Level Order Traversal technique is defined as a method to traverse a Tree such that all nodes present in the same level are traversed completely
+before traversing the next level.
+How does Level Order Traversal work?
+The main idea of level order traversal is to traverse all the nodes of a lower level before moving to any of the nodes of a higher level.
+This can be done in any of the following ways:
+
+The naive one (finding the height of the tree and traversing each level and printing the nodes of that level) efficiently using a queue.
+Level Order Traversal (Naive approach):
+Find height of tree. Then for each level, run a recursive function by maintaining current height. Whenever the level of a node matches,
+print that node.
+
+*What is a Depth-first search?
+DFS (Depth-first search) is a technique used for traversing trees or graphs. Here backtracking is used for traversal.
+In this traversal first, the deepest node is visited and then backtracks to its parent node if no sibling of that node exists
+
+1. Inorder Traversal (Practice):
+Follow the below steps to solve the problem:
+
+Traverse the left subtree, i.e., call Inorder(left-subtree)
+Visit the root
+Traverse the right subtree, i.e., call Inorder(right-subtree)
+2. Preorder Traversal (Practice):
+Follow the below steps to solve the problem:
+
+Visit the root
+Traverse the left subtree, i.e., call Preorder(left-subtree)
+Traverse the right subtree, i.e., call Preorder(right-subtree)
+3. Postorder Traversal (Practice):
+Follow the below steps to solve the problem:
+
+Traverse the left subtree, i.e., call Postorder(left-subtree)
+Traverse the right subtree, i.e., call Postorder(right-subtree)
+Visit the root.

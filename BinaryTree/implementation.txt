@@ -1,0 +1,5 @@
+//Two types of implementation:-
+
+1. Linked representation - Linked List
+2. Sequential representation - Array
+

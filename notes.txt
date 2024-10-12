@@ -1,0 +1,54 @@
+Tree Data Structure is a non-linear data structure in which a collection of elements known as nodes are connected to each other via edges such
+that there exists exactly one path between any two nodes.
+It is a hierarchical structure as elements in a Tree are arranged in multiple levels.In the Tree data structure, the topmost node is known as a root node.
+Each node contains some data, and data can be of any type.
+Each node contains some data and the link or reference of other nodes that can be called child nodes.
+
+Terminologies In Tree Data Structure:-
+
+Parent Node: The node which is a predecessor of a node is called the parent node of that node.
+Child Node: The node which is the immediate successor of a node is called the child node of that node.
+Root Node: The topmost node of a tree or the node which does not have any parent node is called the root node.
+Leaf Node or External Node: The nodes which do not have any child nodes are called leaf nodes.
+Ancestor of a Node: Any predecessor nodes on the path of the root to that node are called Ancestors of that node.
+Descendant: A node x is a descendant of another node y if and only if y is an ancestor of x.
+Sibling: Children of the same parent node are called siblings.
+Level of a node: The count of edges on the path from the root node to that node. The root node has level 0.
+Level of a node= Height of root - height of that node
+Internal node: A node with at least one child is called Internal Node.
+Neighbor of a Node: Parent or child nodes of that node are called neighbors of that node.
+Subtree: Any node of the tree along with its descendant.
+Climbing: Going from leaves to the root.
+Descending: Going from root to the leaves.
+Degree: The degree of a node in a tree or graph is the number of edges connected to that node.
+
+Properties of Tree data structure:-
+
+Recursive data structure: The tree is also known as a recursive data structure. A tree can be defined as recursively because the distinguished
+                          node in a tree data structure is known as a root node. The root node of the tree contains a link to all the roots of
+                          its subtrees.  The left subtree(or right subtree) can be further split into subtrees. Recursion means reducing
+                          something in a self-similar manner. So, this recursive property of the tree data structure is implemented in various
+                          applications.
+Number of edges: If there are n nodes, then there would n-1 edges. Each arrow in the structure represents the link or path. Each node, except
+                 the root node, will have atleast one incoming link known as an edge. There would be one link for the parent-child relationship.
+
+Depth of node x: The depth of node x can be defined as the length of the path from the root to the node x. One edge contributes one-unit length
+                 in the path. So, the depth of node x can also be defined as the number of edges between the root node and the node x. The
+                 root node has 0 depth.
+                 Depth of a node = Height of the left node - Height of the right node
+Height of node x: The height of node x can be defined as the longest path from the node x to the leaf node.
+
+Types of Trees : Based on height or depth:-
+
+Balanced Tree:-
+Definition: A tree is balanced if the height difference between the left and right subtrees of every node is within a specific limit
+            (typically, the difference is 1 or less)=> depth of the nodes<2.
+Example: Binary Search Tree (BST) or AVL Tree, where the difference in height between the left and right subtrees is at most 1.
+Depth: The depth or height of the tree is minimized, typically 𝑂(log n) where n is the number of nodes.
+Performance: Operations like search, insert, and delete are efficient, generally𝑂(log n).
+
+Unbalanced Tree
+Definition: A tree is unbalanced when the nodes are skewed towards one side, making one subtree much deeper than the other.
+Example: A degenerate (or pathological) tree, which is basically a linked list, is an unbalanced tree.
+Depth: The depth can grow to O(n), where n is the number of nodes, making the tree more like a linear structure.
+Performance: Search, insert, and delete operations degrade to O(n) in the worst case.

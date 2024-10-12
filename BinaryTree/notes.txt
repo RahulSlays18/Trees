@@ -1,0 +1,62 @@
+The Binary tree means that the node can have maximum two children. Thus, degree of each node of a binary tree can be 0,1 or 2.
+
+PROPERTIES OF BINARY TREE:-
+
+At each level of i, the maximum number of nodes is 2^i.
+If every non leaf node in a binary tree has nonempty left and right subtrees, the tree is termed as strictly binary tree. The Strictly Binary
+Tree with n leaves always contains 2n-1 nodes.
+The height of the tree is defined as the longest path from the root node to the leaf node.In general, the maximum number of nodes possible at
+height h is (2^0+ 2^1 + 2^2+….2^h) = 2h+1 - 1.                                            [Sum of Geometric Progression]
+The maximum number of nodes in a binary tree of height H is 2H – 1.
+
+Types of Binary Tree: There are four types of Binary tree:-
+
+1. Full/ proper/ strict Binary tree
+
+The full binary tree is also known as a strict binary tree. The tree can only be considered as the full binary tree if each node must contain
+either 0 or 2 children. The full binary tree can also be defined as the tree in which each node must contain 2 children except the leaf nodes.
+Properties of Full Binary Tree:-
+
+The number of leaf nodes is equal to the number of internal nodes plus 1 OR If you have n leaf nodes, then number of internal nodes is n-1.
+The maximum number of nodes is the same as the number of nodes in the binary tree, i.e., 2^(h+1) -1.
+The minimum number of nodes in the full binary tree is 2*h-1.
+The minimum height of the full binary tree is log2(n+1) - 1.
+The maximum height of the full binary tree can be computed as:
+n= 2*h - 1
+n+1 = 2*h
+h = n+1/2
+
+2. Complete Binary Tree
+
+The complete binary tree is a tree in which all the nodes are completely filled except the last level. In the last level, all the nodes must
+be as left as possible. In a complete binary tree, the nodes should be added from the left.
+Properties of complete binary tree :-
+
+The maximum number of nodes in complete binary tree is 2^(h+1) - 1.
+The minimum number of nodes in complete binary tree is 2^h.
+The minimum height of a complete binary tree is log2(n+1) - 1.
+If the parent is it index i so the left child is at 2i+1 and the right child is at 2i+2.
+
+3. Perfect Binary Tree
+
+A tree is a perfect binary tree if all the internal nodes have 2 children, and all the leaf nodes are at the same level.All the perfect binary
+trees are the complete binary trees as well as the full binary tree, but vice versa is not true, i.e., all complete binary trees and full binary
+trees are the perfect binary trees.
+Properties of perfect binary tree :-
+
+The maximum number of nodes in complete binary tree is 2^(h+1) - 1.
+The minimum number of nodes in complete binary tree is 2^h where h is the height of the tree.
+Maximum number of leaf nodes=2^h.
+Minimum number of levels of a tree with height h = h+1.
+The minimum number of levels for a perfect binary tree with n leaves is log2(n)+1.
+The minimum number of levels for a perfect binary tree with n nodes is log2(n+1).
+
+4. Degenerate/Skewed Binary Tree
+The degenerate binary tree is a tree in which all the internal nodes have only one child.
+
+NOTES:-
+1. Perfect Binary Tree vs Complete Binary Tree:
+A binary tree of height ‘h’ having the maximum number of nodes is a perfect binary tree.
+For a given height h, the maximum number of nodes is 2h+1-1.
+A complete binary tree of height h is a perfect binary tree up to height h-1, and in the last level element are stored in left to right order.
+2. Another famous type of binary tree is Ordered Binary Tree, where each and every node has some property. For example: Binary Search Trees.
