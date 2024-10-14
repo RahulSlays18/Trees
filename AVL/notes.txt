@@ -1,0 +1,40 @@
+AVL Tree Data Structure
+An AVL tree defined as a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees for any node
+cannot be more than one.
+The difference between the heights of the left subtree and the right subtree for any node is known as the balance factor of the node.
+The AVL tree is named after its inventors, Georgy Adelson-Velsky and Evgenii Landis, who published it in their 1962 paper
+“An algorithm for the organization of information”.
+Tree is said to be balanced if balance factor of each node is in between -1 to 1, otherwise, the tree will be unbalanced and need to be balanced.
+If balance factor of any node is 1, it means that the left sub-tree is one level higher than the right sub-tree.
+If balance factor of any node is 0, it means that the left sub-tree and right sub-tree contain equal height.
+If balance factor of any node is -1, it means that the left sub-tree is one level lower than the right sub-tree.
+
+Complexity
+Algorithm   |   Average case    |   Worst case
+Space       |   o(n)            |   o(n)
+Search      |   o(log n)        |   o(log n)
+Insert      |   o(log n)        |   o(log n)
+Delete      |   o(log n)        |   o(log n)
+
+Why AVL Tree?
+AVL tree controls the height of the binary search tree by not letting it to be skewed. The time taken for all operations in a binary search
+tree of height h is O(h). However, it can be extended to O(n) if the BST becomes skewed (i.e. worst case). By limiting this height to log n,
+AVL tree imposes an upper bound on each operation to be O(log n) where n is the number of nodes.
+
+#Algorithm of AVL trees:-
+1. Insert a node n(as we do in binary search trees).
+2. Start from node n and find the node that makes the tree unbalanced(bottom-up approach).
+3. Using one of the following four rules of rotation stated as follows, rotate the tree(sub-tree).
+
+AVL Rotations
+We perform rotation in AVL tree only in case if Balance Factor is other than -1, 0, and 1. There are basically four types of rotations which
+are as follows:
+
+L L rotation: Inserted node is in the left subtree of left subtree of A
+R R rotation : Inserted node is in the right subtree of right subtree of A
+L R rotation : Inserted node is in the right subtree of left subtree of A
+R L rotation : Inserted node is in the left subtree of right subtree of A
+Where node A is the node whose balance Factor is other than -1, 0, 1.
+
+The first two rotations LL and RR are single rotations and the next two rotations LR and RL are double rotations.
+For a tree to be unbalanced, minimum height must be at least 2, Let us understand each rotation
